@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin : 0;
+    padding: 0;
+}
+header {
+    margin : 0;
+    padding: 0;
+}
+h1 {
+    font-family: "Fira Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    text-align: justify;
+}
+
+
+.container{
+    width: 100%;
+}
+
+.row1 {
+    display : grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 60%;
+    margin:  10px auto;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    
+}
+/* PoV Laptop */
+
+ /* For screens smaller than 768px (e.g., phones) */
+        @media (max-width: 768px) {
+            .row1 {
+            width: 90%;
+            font-size: 1rem;
+            }
+            .img {
+            width:90%;
+            height: auto;
+            }
+            .container-right {
+            padding-top: 1rem;
+            }
+            .container-left {
+            width: 90%;
+            }
+            .menubar {
+            width: 100%;
+            }
+    }
+        /* For screens smaller than 480px (e.g., small phones) */
+        @media (max-width: 480px) {
+            .row1 {
+            width: 90%;
+            font-size: 0.875rem; /* Slightly smaller text, but not too small */
+             /* Adjust padding for smaller screens */
+            }
+            .container-right {
+            padding-top: 1rem;        
+            }
+            .container-left {
+            width: 90%;
+            }
+            .menubar {
+            width: 100%;
+            margin : 0;
+            justify-content: flex-start;
+            }
+            .menu {
+            font-size: 0.875rem;
+            width : 90%;
+             /* Slightly smaller text, but not too small */
+            }
+            .menu-list li a{
+            width: 90%;
+            font-size : 1rem;
+            }
+        }
+
+
+.container-left {
+    font-size: 20px;
+    padding-top: 1rem;
+}
+.container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-right img {
+    width:100%;
+    height: auto;
+    margin: 20px auto;
+}
+.grup-button {
+    display: flex;
+    justify-content: right;
+    gap : 1rem;
+}
+.grup-button button {
+    border : none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-out;
+}
+
+#jadi {
+    background-color: rgb(135, 20, 20);
+}
+.grup-button button:hover {
+    background-color: #45A049;
+}
+.grup-button button:active {
+    background-color: #3e8e41;
+}
+
+/* Menubar Setting disini   */
+
+.menubar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    
+}
+
+.menu-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size : 24px;
+    font-weight: bold;
+}
+.menu-list {
+    display: flex;
+    gap: 20px;
+    
+}
+.ul menu-list {
+    text-decoration: none;
+}
+.menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size : 1em;
+}
+.menu-list li::marker {
+    text-decoration: none;
+}
+a {
+     text-decoration: none;
+     color : #fff;
+}
+ul.menu-list {
+    .menu-list li::marker {
+    text-decoration: none;
+}
+}
+
+ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
