@@ -57,6 +57,13 @@ p {
             .menubar {
             width: 100%;
             }
+            .menu-logo img {
+            width: 100%;
+            }
+            .menu-list li a{
+            width: 100%;
+            font-size : 0.175rem;
+            }
     }
         /* For screens smaller than 480px (e.g., small phones) */
         @media (max-width: 480px) {
@@ -76,14 +83,18 @@ p {
             margin : 0;
             justify-content: flex-start;
             }
+            .menu-logo img {
+            width: 100%;
+            
+            }
             .menu {
             font-size: 0.875rem;
             width : 90%;
              /* Slightly smaller text, but not too small */
             }
             .menu-list li a{
-            width: 90%;
-            font-size : 1rem;
+            width: 100%;
+            font-size : 0.875rem;
             }
         }
 
@@ -152,6 +163,9 @@ p {
     font-size : 24px;
     font-weight: bold;
 }
+.menu-logo img {
+    width: 75%;
+}
 .menu-list {
     display: flex;
     gap: 20px;
@@ -163,7 +177,7 @@ p {
 .menu-list li a {
     color: #fff;
     text-decoration: none;
-    font-size : 1em;
+    font-size : 1.5rem;
 }
 .menu-list li::marker {
     text-decoration: none;
@@ -183,3 +197,6 @@ ul li {
     text-decoration: none;
 }
 
+.grup-button button#cari , button#jadi{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
